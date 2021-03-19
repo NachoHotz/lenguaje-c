@@ -1,5 +1,4 @@
 # Ejercicios-lenguajeC
-Ejercicios de lenguaje C de la universidad.
-Hechos durante las materias Algoritmos y Resolución de Problemas (1°Año - 1°Cuatrimestre) y Programación Procedural (1°Año, 2°Cuatrimestre), de la carrera Licenciatura en Ciencias de la Computación.
+Todo lo relacionado con Lenguaje C, de las materias Algoritmos y Resolución de Problemas (Teoría y Práctica completas), y Programción Procedural (Teoría hasta la Unidad 4, y Práctica solo Unidad 2), de la carrera Licenciatura en Ciencias de la Computación - Facultad Ciencias Exactas, Físicas y Naturales.
 
-Dentro de cada Eje, se encuentra un archivo .pdf, en el cual esta la práctica original, junto con una descripción de los ejercicios realizados.
+Dentro de cada carpeta Eje (Algoritmos y Resolución de Problemas/Práctica) hay un archivo .pdf, con explicación de cada ejercicio realizado, a la vez que otros ejercicios (lo mismo aplica para la carpeta Unidad 2 de Programación Procedural dentro de su respectiva carpeta Práctica)
