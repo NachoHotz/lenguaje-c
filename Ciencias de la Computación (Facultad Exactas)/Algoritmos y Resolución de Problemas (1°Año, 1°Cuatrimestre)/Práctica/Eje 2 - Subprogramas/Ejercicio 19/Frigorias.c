@@ -1,39 +1,30 @@
 #include <stdio.h>
 #include <conio.h>
 
-float metros (float xancho, float xlargo, float xalto)
-{
-	float mts;
+float metros (float xancho, float xlargo, float xalto) {
+  float mts;
+  mts = xancho * xlargo * xalto;
 
-	mts = xancho * xlargo * xalto;
-
-	return mts;
+  return mts;
 }
 
-float aire (float xhabitacion)
-{
+float aire (float xhabitacion) {
+ float frig;
+ frig = xhabitacion * 50;
 
-    float frig;
-
-    frig = xhabitacion * 50;
-
-    return frig;
-
+ return frig;
 }
 
-int main ()
-{
-    float ancho, largo, alto, frigorias_aire, habitacion;
+int main () {
+  float ancho, largo, alto, frigorias_aire, habitacion;
 
-    printf ("Ingresar medidas de la habitacion en metros (ancho, largo y alto. Separar con espacios): ");
-    scanf ("%f" "%f" "%f", &ancho, &largo, &alto);
+  printf ("Ingresar medidas de la habitacion en metros (ancho, largo y alto. Separar con espacios): ");
+  scanf ("%f" "%f" "%f", &ancho, &largo, &alto);
 
-    habitacion = metros (ancho, largo, alto);
+  habitacion = metros (ancho, largo, alto);
+  frigorias_aire = aire (habitacion);
 
-    frigorias_aire = aire (habitacion);
-
-    printf ("\nSe requieren de: %.0f frigorias,", frigorias_aire); printf(" para lograr refrigerar una habitacion de %.0f mts3\n\n", habitacion);
-
-    printf("Pulse cualquier tecla para cerrar el programa. ");
-    getch();
+  printf ("\nSe requieren de: %.0f frigorias,", frigorias_aire); printf(" para lograr refrigerar una habitacion de %.0f mts3\n\n", habitacion);
+  printf("Pulse cualquier tecla para cerrar el programa. ");
+  getch();
 }

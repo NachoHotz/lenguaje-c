@@ -1,25 +1,22 @@
 #include <stdio.h>
 #include <conio.h>
 
-void edad (int a1, int a2)
-{
-	int Edad;
+void edad (int a1, int a2) {
+  int Edad;
+  Edad = a1 - a2;
 
-	Edad = a1 - a2;
-
-	printf("\nEdad: %d \n\nPrecionar cualquier tecla para salir. ", Edad);
-	getch();
+  printf("\nEdad: %d \n\nPrecionar cualquier tecla para salir. ", Edad);
+  getch();
 }
 
-int main()
-{
-	int fechaNacimiento, fechaActual;
+int main() {
+  int fechaNacimiento, fechaActual;
 
-	printf("\nIngresar año actual: ");
-	scanf("%d", &fechaNacimiento);
+  printf("\nIngresar año actual: ");
+  scanf("%d", &fechaNacimiento);
 
-	printf("\nAhora ingresar año de nacimiento: ");
-	scanf("%d", &fechaActual);
+  printf("\nAhora ingresar año de nacimiento: ");
+  scanf("%d", &fechaActual);
 
-	edad(fechaNacimiento, fechaActual);
+  edad(fechaNacimiento, fechaActual);
 }
