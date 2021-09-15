@@ -10,7 +10,6 @@ void cerrar () {
     Sleep (600);
     printf (".");
   }
-  return 0;
 }
 
 int main () {
@@ -62,6 +61,7 @@ int main () {
 	return 0;
       }else if ((letra == 'n') || (letra == 'N')) {
         cerrar();
+        return 0;
       }
     case 2:
       printf ("\nIntroduzca los numeros a restar: ");
@@ -88,6 +88,7 @@ int main () {
 	return 0;
       }else if ((letra == 'n') || (letra == 'N')) {
         cerrar();
+        return 0;
       }
     case 3:
       printf ("\nIntroduzca el numero: ");
@@ -117,6 +118,7 @@ int main () {
 	return 0;
       }else if ((letra == 'n') || (letra == 'N')) {
         cerrar();
+        return 0;
       }
     case 4:
       printf ("\nDigite el primer numero: ");
@@ -147,6 +149,7 @@ int main () {
 
       }else if ((letra == 'n') || (letra == 'N')) {
         cerrar();
+        return 0;
       }
     case 5:
       printf ("\nIntroduzca el numero del cual desea saber su factorial: ");
@@ -176,6 +179,7 @@ int main () {
 
       }else if ((letra == 'n') || (letra == 'N')) {
         cerrar();
+        return 0;
       }
     case 6:
       printf ("\nIngrese el numero del cual desea saber su raiz cuadrada: ");
@@ -202,6 +206,7 @@ int main () {
 	return 0;
       }else if ((letra == 'n') || (letra == 'N')) {
         cerrar();
+        return 0;
       }
     case 7:
       printf ("\nIngrese el numero del cual desea saber su raiz cubica: ");
@@ -228,6 +233,7 @@ int main () {
         return 0;
       }else if ((letra == 'n') || (letra == 'N')) {
         cerrar();
+        return 0;
       }
     case 8:
       printf ("\nIngrese el numero del cual desea saber su potencia: ");
@@ -257,6 +263,7 @@ int main () {
         return 0;
       }else if ((letra == 'n') || (letra == 'N')) {
         cerrar();
+        return 0;
       }
     case 9:
       printf ("\nIntroduzca el porcentaje que desea saber de un numero: ");
@@ -286,9 +293,11 @@ int main () {
 	return 0;
       }else if ((letra == 'n') || (letra == 'N')) {
         cerrar();
+        return 0;
       }
     case 10:
       cerrar();
+      return 0;
 
     default:
       printf ("\nUsted no ha seleccionado ninguna opcion. Seleccione una: ");
@@ -298,5 +307,4 @@ int main () {
 
       return 0;
   }
-  return 0;
 }
