@@ -145,9 +145,9 @@ int main () {
 	goto Menu;
         return 0;
 
-	}else if ((letra == 'n') || (letra == 'N')) {
-          cerrar();
-	}
+      }else if ((letra == 'n') || (letra == 'N')) {
+        cerrar();
+      }
     case 5:
       printf ("\nIntroduzca el numero del cual desea saber su factorial: ");
       scanf ("%d", &fact1);
@@ -174,129 +174,129 @@ int main () {
         goto Menu;
 	return 0;
 
-	}else if ((letra == 'n') || (letra == 'N')) {
-          cerrar();
-	}
-      case 6:
-        printf ("\nIngrese el numero del cual desea saber su raiz cuadrada: ");
-        scanf ("%d", &raiz1);
-
-	raiz = sqrt (raiz1);
-
-	printf ("\nLa raiz cuadrada del numero es: %d", raiz);
-
-	printf ("\n\nDesea realizar otra operacion? (y/n): ");
-	scanf (" %c", &letra);
-
-	if ((letra == 'y') || (letra == 'Y')) {
-	  printf ("\nDesplegando menu de opciones");
-
-          for (int i = 0; i < 3; i++) {
-           Sleep (600);
-           printf (".");
-          }
-
-	  system ("cls");
-
-	  goto Menu;
-	  return 0;
-	}else if ((letra == 'n') || (letra == 'N')) {
-          cerrar();
-	}
-      case 7:
-	printf ("\nIngrese el numero del cual desea saber su raiz cubica: ");
-	scanf ("%f", &raiz3);
-
-	raiz2 = pow (raiz3, 0.33333333333);
-
-	printf ("\nLa raiz cubica del numero es: %.2f", raiz2);
-
-	printf ("\n\nDesea realizar otra operacion? (y/n): ");
-	scanf (" %c", &letra);
-
-	if ((letra == 'y') || (letra == 'Y')) {
-	  printf ("\nDesplegando menu de opciones");
-
-          for (int i = 0; i < 3; i++) {
-           Sleep (600);
-           printf (".");
-          }
-
-	  system ("cls");
-
-	  goto Menu;
-          return 0;
-	}else if ((letra == 'n') || (letra == 'N')) {
-          cerrar();
-	}
-      case 8:
-	printf ("\nIngrese el numero del cual desea saber su potencia: ");
-        scanf ("%d", &pot1);
-
-	printf ("\nAhora ingrese la potencia: ");
-	scanf ("%d", &pot2);
-
-	potencia = pow (pot1, pot2);
-
-	printf ("\nLa potencia del numero es: %d", potencia);
-
-	printf ("\n\nDesea realizar otra operacion? (y/n): ");
-        scanf (" %c", &letra);
-
-        if ((letra == 'y') || (letra == 'Y')) {
-	  printf ("\nDesplegando menu de opciones");
-
-          for (int i = 0; i < 3; i++) {
-           Sleep (600);
-           printf (".");
-          }
-
-          system ("cls");
-
-	  goto Menu;
-          return 0;
-	}else if ((letra == 'n') || (letra == 'N')) {
-          cerrar();
-	}
-      case 9:
-	printf ("\nIntroduzca el porcentaje que desea saber de un numero: ");
-	scanf ("%d", &por);
-
-	printf ("\nAhora ingrese el numero del cual desea saber el porcentaje: ");
-	scanf ("%d", &num);
-
-	porcentaje = (num*por) / 100;
-
-	printf ("\nEl porcentaje del numero es: %d", porcentaje);
-
-	printf ("\n\nDesea realizar otra operacion? (y/n): ");
-        scanf (" %c", &letra);
-
-	if ((letra == 'y') || (letra == 'Y')) {
-          printf ("\nDesplegando menu de opciones");
-
-          for (int i = 0; i < 3; i++) {
-            Sleep (600);
-            printf (".");
-          }
-
-	  system ("cls");
-
-	  goto Menu;
-	  return 0;
-	}else if ((letra == 'n') || (letra == 'N')) {
-          cerrar();
-	}
-      case 10:
+      }else if ((letra == 'n') || (letra == 'N')) {
         cerrar();
+      }
+    case 6:
+      printf ("\nIngrese el numero del cual desea saber su raiz cuadrada: ");
+      scanf ("%d", &raiz1);
 
-      default:
-        printf ("\nUsted no ha seleccionado ninguna opcion. Seleccione una: ");
+      raiz = sqrt (raiz1);
 
-	goto Scan;
-	system ("pause");
+      printf ("\nLa raiz cuadrada del numero es: %d", raiz);
 
+      printf ("\n\nDesea realizar otra operacion? (y/n): ");
+      scanf (" %c", &letra);
+
+      if ((letra == 'y') || (letra == 'Y')) {
+	printf ("\nDesplegando menu de opciones");
+
+        for (int i = 0; i < 3; i++) {
+          Sleep (600);
+          printf (".");
+        }
+
+	system ("cls");
+
+	goto Menu;
 	return 0;
+      }else if ((letra == 'n') || (letra == 'N')) {
+        cerrar();
+      }
+    case 7:
+      printf ("\nIngrese el numero del cual desea saber su raiz cubica: ");
+      scanf ("%f", &raiz3);
+
+      raiz2 = pow (raiz3, 0.33333333333);
+
+      printf ("\nLa raiz cubica del numero es: %.2f", raiz2);
+
+      printf ("\n\nDesea realizar otra operacion? (y/n): ");
+      scanf (" %c", &letra);
+
+      if ((letra == 'y') || (letra == 'Y')) {
+	printf ("\nDesplegando menu de opciones");
+
+        for (int i = 0; i < 3; i++) {
+          Sleep (600);
+          printf (".");
+        }
+
+	system ("cls");
+
+	goto Menu;
+        return 0;
+      }else if ((letra == 'n') || (letra == 'N')) {
+        cerrar();
+      }
+    case 8:
+      printf ("\nIngrese el numero del cual desea saber su potencia: ");
+      scanf ("%d", &pot1);
+
+      printf ("\nAhora ingrese la potencia: ");
+      scanf ("%d", &pot2);
+
+      potencia = pow (pot1, pot2);
+
+      printf ("\nLa potencia del numero es: %d", potencia);
+
+      printf ("\n\nDesea realizar otra operacion? (y/n): ");
+      scanf (" %c", &letra);
+
+      if ((letra == 'y') || (letra == 'Y')) {
+	printf ("\nDesplegando menu de opciones");
+
+        for (int i = 0; i < 3; i++) {
+          Sleep (600);
+          printf (".");
+        }
+
+        system ("cls");
+
+	goto Menu;
+        return 0;
+      }else if ((letra == 'n') || (letra == 'N')) {
+        cerrar();
+      }
+    case 9:
+      printf ("\nIntroduzca el porcentaje que desea saber de un numero: ");
+      scanf ("%d", &por);
+
+      printf ("\nAhora ingrese el numero del cual desea saber el porcentaje: ");
+      scanf ("%d", &num);
+
+      porcentaje = (num*por) / 100;
+
+      printf ("\nEl porcentaje del numero es: %d", porcentaje);
+
+      printf ("\n\nDesea realizar otra operacion? (y/n): ");
+      scanf (" %c", &letra);
+
+      if ((letra == 'y') || (letra == 'Y')) {
+        printf ("\nDesplegando menu de opciones");
+
+        for (int i = 0; i < 3; i++) {
+          Sleep (600);
+          printf (".");
+        }
+
+	system ("cls");
+
+	goto Menu;
+	return 0;
+      }else if ((letra == 'n') || (letra == 'N')) {
+        cerrar();
+      }
+    case 10:
+      cerrar();
+
+    default:
+      printf ("\nUsted no ha seleccionado ninguna opcion. Seleccione una: ");
+
+      goto Scan;
+      system ("pause");
+
+      return 0;
   }
   return 0;
 }
