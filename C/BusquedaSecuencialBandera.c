@@ -37,16 +37,16 @@ bool busqueda(int A[N], int xedad) {
 
 int main() {
   int edades[N], edad;
-  bool encontrar;
+  bool encontrado;
 
   carga(edades);
 
   printf("\nIngresar edad a buscar: ");
   scanf("%d", &edad);
 
-  encontrar = busqueda(edades, edad);
+  encontrado = busqueda(edades, edad);
 
-  if (encontrar == true) {
+  if (encontrado == true) {
     printf("\nEl elemento se encuentra en el arreglo. Pulse cualquier tecla para cerrar el programa. ");
     getch();
   }else {
