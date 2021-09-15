@@ -48,17 +48,17 @@ int main () {
       scanf (" %c", &letra);
 
       if ((letra == 'y') || (letra == 'Y')) {
-	      printf ("\nDesplegando menu de opciones");
+	printf ("\nDesplegando menu de opciones");
 
         for (int i = 0; i < 3; i++) {
           Sleep (600);
           printf (".");
         }
 
-	    system ("cls");
+	system ("cls");
 
-      goto Menu;
-	    return 0;
+        goto Menu;
+	return 0;
       }else if ((letra == 'n') || (letra == 'N')) {
         cerrar();
         return 0;
@@ -75,17 +75,17 @@ int main () {
       scanf (" %c", &letra);
 
       if ((letra == 'y') || (letra == 'Y')) {
-	      printf ("\nDesplegando menu de opciones");
+	printf ("\nDesplegando menu de opciones");
 
         for (int i = 0; i < 3; i++) {
           Sleep (600);
           printf (".");
         }
 
-	    system ("cls");
+	system ("cls");
 
-	    goto Menu;
-	    return 0;
+	goto Menu;
+	return 0;
       }else if ((letra == 'n') || (letra == 'N')) {
         cerrar();
         return 0;
@@ -105,17 +105,17 @@ int main () {
       scanf (" %c", &letra);
 
       if ((letra == 'y') || (letra == 'Y')) {
-	      printf ("\nDesplegando menu de opciones");
+	printf ("\nDesplegando menu de opciones");
 
         for (int i = 0; i < 3; i++) {
           Sleep (600);
           printf (".");
         }
 
-	    system ("cls");
+	system ("cls");
 
-	    goto Menu;
-	    return 0;
+	goto Menu;
+	return 0;
       }else if ((letra == 'n') || (letra == 'N')) {
         cerrar();
         return 0;
@@ -135,17 +135,18 @@ int main () {
       scanf (" %c", &letra);
 
       if ((letra == 'y') || (letra == 'Y')) {
-	      printf ("\nDesplegando menu de opciones");
+	printf ("\nDesplegando menu de opciones");
 
         for (int i = 0; i < 3; i++) {
           Sleep (600);
           printf (".");
         }
 
-	    system ("cls");
+	system ("cls");
 
-	    goto Menu;
-      return 0;
+	goto Menu;
+        return 0;
+
       }else if ((letra == 'n') || (letra == 'N')) {
         cerrar();
         return 0;
@@ -171,10 +172,10 @@ int main () {
           printf (".");
         }
 
-	    system ("cls");
+	system ("cls");
 
-      goto Menu;
-	    return 0;
+        goto Menu;
+	return 0;
 
       }else if ((letra == 'n') || (letra == 'N')) {
         cerrar();
@@ -192,17 +193,17 @@ int main () {
       scanf (" %c", &letra);
 
       if ((letra == 'y') || (letra == 'Y')) {
-	      printf ("\nDesplegando menu de opciones");
+	printf ("\nDesplegando menu de opciones");
 
         for (int i = 0; i < 3; i++) {
           Sleep (600);
           printf (".");
         }
 
-	    system ("cls");
+	system ("cls");
 
-	    goto Menu;
-	    return 0;
+	goto Menu;
+	return 0;
       }else if ((letra == 'n') || (letra == 'N')) {
         cerrar();
         return 0;
@@ -219,16 +220,16 @@ int main () {
       scanf (" %c", &letra);
 
       if ((letra == 'y') || (letra == 'Y')) {
-	      printf ("\nDesplegando menu de opciones");
+	printf ("\nDesplegando menu de opciones");
 
         for (int i = 0; i < 3; i++) {
           Sleep (600);
           printf (".");
         }
 
-	      system ("cls");
+	system ("cls");
 
-	      goto Menu;
+	goto Menu;
         return 0;
       }else if ((letra == 'n') || (letra == 'N')) {
         cerrar();
@@ -249,7 +250,7 @@ int main () {
       scanf (" %c", &letra);
 
       if ((letra == 'y') || (letra == 'Y')) {
-	      printf ("\nDesplegando menu de opciones");
+	printf ("\nDesplegando menu de opciones");
 
         for (int i = 0; i < 3; i++) {
           Sleep (600);
@@ -258,7 +259,7 @@ int main () {
 
         system ("cls");
 
-	      goto Menu;
+	goto Menu;
         return 0;
       }else if ((letra == 'n') || (letra == 'N')) {
         cerrar();
@@ -286,10 +287,10 @@ int main () {
           printf (".");
         }
 
-	    system ("cls");
+	system ("cls");
 
-	    goto Menu;
-	    return 0;
+	goto Menu;
+	return 0;
       }else if ((letra == 'n') || (letra == 'N')) {
         cerrar();
         return 0;
