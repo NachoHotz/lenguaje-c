@@ -3,7 +3,7 @@
 #include <stdlib.h>
 #include <windows.h>
 
-void mostrarMensaje () {
+void cerrar () {
   printf ("\n\n\t\tCerrando programa");
 
   for (int i = 0; i < 3; i++) {
@@ -61,7 +61,7 @@ int main () {
         goto Menu;
 	return 0;
       }else if ((letra == 'n') || (letra == 'N')) {
-        mostrarMensaje();
+        cerrar();
       }
     case 2:
       printf ("\nIntroduzca los numeros a restar: ");
@@ -87,7 +87,7 @@ int main () {
 	goto Menu;
 	return 0;
       }else if ((letra == 'n') || (letra == 'N')) {
-        mostrarMensaje();
+        cerrar();
       }
     case 3:
       printf ("\nIntroduzca el numero: ");
@@ -116,7 +116,7 @@ int main () {
 	goto Menu;
 	return 0;
       }else if ((letra == 'n') || (letra == 'N')) {
-        mostrarMensaje();
+        cerrar();
       }
     case 4:
       printf ("\nDigite el primer numero: ");
@@ -146,7 +146,7 @@ int main () {
         return 0;
 
 	}else if ((letra == 'n') || (letra == 'N')) {
-          mostrarMensaje();
+          cerrar();
 	}
     case 5:
       printf ("\nIntroduzca el numero del cual desea saber su factorial: ");
@@ -175,7 +175,7 @@ int main () {
 	return 0;
 
 	}else if ((letra == 'n') || (letra == 'N')) {
-          mostrarMensaje();
+          cerrar();
 	}
       case 6:
         printf ("\nIngrese el numero del cual desea saber su raiz cuadrada: ");
@@ -201,7 +201,7 @@ int main () {
 	  goto Menu;
 	  return 0;
 	}else if ((letra == 'n') || (letra == 'N')) {
-          mostrarMensaje();
+          cerrar();
 	}
       case 7:
 	printf ("\nIngrese el numero del cual desea saber su raiz cubica: ");
@@ -227,7 +227,7 @@ int main () {
 	  goto Menu;
           return 0;
 	}else if ((letra == 'n') || (letra == 'N')) {
-          mostrarMensaje();
+          cerrar();
 	}
       case 8:
 	printf ("\nIngrese el numero del cual desea saber su potencia: ");
@@ -256,7 +256,7 @@ int main () {
 	  goto Menu;
           return 0;
 	}else if ((letra == 'n') || (letra == 'N')) {
-          mostrarMensaje();
+          cerrar();
 	}
       case 9:
 	printf ("\nIntroduzca el porcentaje que desea saber de un numero: ");
@@ -285,15 +285,17 @@ int main () {
 	  goto Menu;
 	  return 0;
 	}else if ((letra == 'n') || (letra == 'N')) {
-          mostrarMensaje();
+          cerrar();
 	}
-      case 10: mostrarMensaje();
+      case 10:
+        cerrar();
 
       default:
         printf ("\nUsted no ha seleccionado ninguna opcion. Seleccione una: ");
 
 	goto Scan;
 	system ("pause");
+
 	return 0;
   }
   return 0;
