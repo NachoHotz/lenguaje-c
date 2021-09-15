@@ -6,8 +6,8 @@ using namespace std;
 int main () {
   int numero, unidades, decenas, centenas, millar;
 
-  printf ("Digite un numero: ");
-  scanf ("%d", &numero);
+  cout<<"Digite un numero: ";
+  cin>>numero;
 
   unidades = numero%10; numero /= 10;
   decenas = numero%10; numero /= 10;

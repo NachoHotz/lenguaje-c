@@ -6,7 +6,7 @@ using namespace std;
 void calcularFactorial (int numero) {
   int fact = 1;
 
-  for (int i = 1; i <= n; i++) {
+  for (int i = 1; i <= numero; i++) {
     fact = fact * i;
   }
 
