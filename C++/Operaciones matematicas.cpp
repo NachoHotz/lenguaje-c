@@ -44,6 +44,7 @@ int main () {
       sum = sum1 + sum2;
 
       printf ("\nEl resultado es: %d", sum);
+
       printf ("\n\nDesea realizar otra operacion? (y/n): ");
       scanf (" %c", &letra);
 
@@ -69,6 +70,7 @@ int main () {
       res = res1 - res2;
 
       printf ("\nEl resultado es: %d", res);
+
       printf ("\n\nDesea realizar otra operacion? (y/n): ");
       scanf (" %c", &letra);
 
@@ -97,6 +99,7 @@ int main () {
       multi = multi1 * multi2;
 
       printf ("\nEl resultado es: %d", multi);
+
       printf ("\n\nDesea realizar otra operacion? (y/n): ");
       scanf (" %c", &letra);
 
@@ -125,6 +128,7 @@ int main () {
       div = div1 / div2;
 
       printf ("\nEl resultado es: %d", div);
+
       printf ("\n\nDesea realizar otra operacion? (y/n): ");
       scanf (" %c", &letra);
 
@@ -151,7 +155,9 @@ int main () {
       for (int i = 1; i <= fact1; i++) {
         fact = fact * i;
       }
+
       printf ("\nEl factorial del numero es: %d", fact);
+
       printf ("\n\nDesea realizar otra operacion? (y/n): ");
       scanf (" %c", &letra);
 
@@ -178,6 +184,7 @@ int main () {
 	raiz = sqrt (raiz1);
 
 	printf ("\nLa raiz cuadrada del numero es: %d", raiz);
+
 	printf ("\n\nDesea realizar otra operacion? (y/n): ");
 	scanf (" %c", &letra);
 
@@ -248,46 +255,46 @@ int main () {
 
 	  goto Menu;
           return 0;
-	  }else if ((letra == 'n') || (letra == 'N')) {
-            mostrarMensaje();
-	  }
-	case 9:
-	  printf ("\nIntroduzca el porcentaje que desea saber de un numero: ");
-	  scanf ("%d", &por);
+	}else if ((letra == 'n') || (letra == 'N')) {
+          mostrarMensaje();
+	}
+      case 9:
+	printf ("\nIntroduzca el porcentaje que desea saber de un numero: ");
+	scanf ("%d", &por);
 
-	  printf ("\nAhora ingrese el numero del cual desea saber el porcentaje: ");
-	  scanf ("%d", &num);
+	printf ("\nAhora ingrese el numero del cual desea saber el porcentaje: ");
+	scanf ("%d", &num);
 
-	  porcentaje = (num*por) / 100;
+	porcentaje = (num*por) / 100;
 
-	  printf ("\nEl porcentaje del numero es: %d", porcentaje);
+	printf ("\nEl porcentaje del numero es: %d", porcentaje);
 
-	  printf ("\n\nDesea realizar otra operacion? (y/n): ");
-          scanf (" %c", &letra);
+	printf ("\n\nDesea realizar otra operacion? (y/n): ");
+        scanf (" %c", &letra);
 
-	  if ((letra == 'y') || (letra == 'Y')) {
-	    printf ("\nDesplegando menu de opciones");
+	if ((letra == 'y') || (letra == 'Y')) {
+          printf ("\nDesplegando menu de opciones");
 
-            for (int i = 0; i < 3; i++) {
-             Sleep (600);
-             printf (".");
-            }
+          for (int i = 0; i < 3; i++) {
+            Sleep (600);
+            printf (".");
+          }
 
-	    system ("cls");
+	  system ("cls");
 
-	    goto Menu;
-	    return 0;
-	  }else if ((letra == 'n') || (letra == 'N')) {
-            mostrarMensaje();
-	  }
-	case 10: mostrarMensaje();
-
-	default:
-          printf ("\nUsted no ha seleccionado ninguna opcion. Seleccione una: ");
-
-	  goto Scan;
-	  system ("pause");
+	  goto Menu;
 	  return 0;
+	}else if ((letra == 'n') || (letra == 'N')) {
+          mostrarMensaje();
+	}
+      case 10: mostrarMensaje();
+
+      default:
+        printf ("\nUsted no ha seleccionado ninguna opcion. Seleccione una: ");
+
+	goto Scan;
+	system ("pause");
+	return 0;
   }
   return 0;
 }
