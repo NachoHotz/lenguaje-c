@@ -64,7 +64,7 @@ void muestraOrdenSeleccion (localComidas A[N]) {
   printf("\n\t-- ORDEN DE IMPORTE DESCNENDENTE --\n");
 
   for (int i = 0; i < N; i++) {
-    printf("\nA[%d] = $%.2f", i, A[i].importe);
+    printf("\nCliente %d = $%.2f", i+1, A[i].importe);
   }
 }
 
@@ -131,7 +131,7 @@ void busquedaBinariaImporte (localComidas A[N]) {
   if (inferior <= superior) {
     for (int i = 0; i < N; i++) {
       if (A[i].importe == A[medio].importe) {
-	printf("\nEl importe buscado se encontro en el registro en la posicion A[%d]", medio);
+	printf("\nEl importe buscado se encontro en el registro en la posicion %d", medio);
 
 	fflush(stdin);
 	printf("\n\nDesea ver los datos del cliente con el importe buscado? (Y/N): ");
