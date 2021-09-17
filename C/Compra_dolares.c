@@ -41,10 +41,10 @@ int main () {
     printf ("\n\nTotal a abonar: $%.2f pesos\n\n", total2);
 
     }else {
-      printf ("\n\nNo se agregara comision ya que el monto a comprar es menor a 5000.");
+      printf ("\n\nNo se agregara comision ya que el monto a comprar es menor a $5000.");
       printf ("\n\nTotal a abonar: $%.2f pesos\n\n", total_valor);
     }
-  
+
   printf("Pulse cualquier tecla para cerrar el programa. ");
   getch();
 }
