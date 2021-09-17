@@ -15,7 +15,7 @@ void carga (float A[N]) {
   printf("\n\t-- CARGA DEL ARREGLO -- : 10 COMPONENTES\n\n");
 
   for (int i = 0; i < N; i++) {
-    printf("A[%d] = $", i);
+    printf("Factura %d = $", i);
     scanf("%f", &A[i]);
   }
   system("cls");
@@ -31,7 +31,7 @@ void importe (float A[N]) {
   min = 99999.99;
 
   for (int i = 0; i < N; i++) {
-    printf("\nA[%d] = $%.2f", i, A[i]);
+    printf("\nFactura %d = $%.2f", i, A[i]);
 
     sumaTotalImportes = sumaTotalImportes + A[i];
 
@@ -52,7 +52,7 @@ void importe (float A[N]) {
 
   for (int i = 0; i < N; i++) {
     if (A[i] == min) {
-      printf(" \nA[%d] = $%.2f", i, A[i]);
+      printf(" \n%d = $%.2f", i, A[i]);
     }
   }
 
@@ -60,7 +60,7 @@ void importe (float A[N]) {
 
   for (int i = 0; i < N; i++) {
     if (A[i] > importePromedio) {
-      printf ("\nA[%d] = $%.2f", i, A[i]);
+      printf ("\n%d = $%.2f", i, A[i]);
     }
   }
   printf("\n\nImporte promedio: $%.2f\n", importePromedio);
@@ -88,7 +88,7 @@ void teclado (float A[N]) {
 
   porcentaje = (100 * facturasImporteMayor) / 10;
 
-  printf("\nPorcentaje de facturas con importe mayor al importe ingresado por teclado: %.2f\n\n", porcentaje);
+  printf("\nPorcentaje de facturas con importe mayor al importe ingresado: %.2f\n\n", porcentaje);
   printf("Pulse cualquier tecla para cerrar el programa. ");
   getch();
 }
