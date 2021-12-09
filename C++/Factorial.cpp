@@ -16,7 +16,7 @@ void calcularFactorial (int numero) {
 }
 
 int main () {
-  int i, fact = 1, n;
+  int n;
 
   cout<<"Introduce el numero del cual deseas obtener el factorial: ";
   cin>>n;
